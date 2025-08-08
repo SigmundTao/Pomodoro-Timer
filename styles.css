@@ -13,6 +13,10 @@ body {
     overflow: hidden;
 }
 
+#background-effect {
+    background: linear-gradient(80deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
 #main-element {
     display: flex;
     justify-content: center;
@@ -23,11 +27,13 @@ body {
 
 }
 
+#pomodoro-timer {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius);
+    
+}
+
 #settings {
-    display: flex;
-    flex-direction: column;
-    height: 40vh;
-    width: 60vw;
     border-radius: var(--border-radius);
     background-color: var(--primary);
     color: var(--font-color);
@@ -38,8 +44,8 @@ body {
 #settings-holder {
     display: flex;
     flex-direction: column;
-    height: 80%;
-    width: 100%;
+    height: 40vh;
+    width: 20vw;
 }
 
 #close-settings-btn {
@@ -47,7 +53,7 @@ body {
     width: 5vw;
     position: absolute;
     top: 1vh;
-    right: 1vw;
+    right: 1vh;
 }
 
 #close-settings-btn:hover {
@@ -55,7 +61,7 @@ body {
 }
 
 #settings-holder input {
-    width: 20%;
+    width: 100%;
 }
 
 #settings-holder select{
@@ -67,8 +73,8 @@ body {
     position: fixed;
     top: 2vh;
     right: 2vh;
-    height: 5vh;
-    width: 5vw;
+    height: 3vh;
+    width: 3vw;
 }
 
 #settings-btn:hover {
@@ -97,7 +103,6 @@ body {
 }
 
 #timer {
-    border: 1px solid black;
     font-size: 8rem;
     display: flex;
     justify-content: center;
@@ -109,7 +114,6 @@ body {
     align-items: center;
     justify-content: center;
     gap: 2vw;
-    border: 1px solid black;
     width: 50vw;
     height: 7vh;
 }
@@ -121,11 +125,11 @@ body {
 }
 
 #ctrl-btn-div {
-    border: 1px solid black;
     height: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1vw;
 }
 
 #start-btn {
@@ -134,10 +138,64 @@ body {
     border-radius: var(--border-radius);
 }
 
-.pause-btn {
-    height: 65%;
+#pause-btn {
+    height: 5vh;
 }
 
-.pause-btn:hover {
+#pause-btn:hover {
+    cursor: pointer;
+}
+
+#play-btn {
+    height: 5vh;
+}
+
+#play-btn:hover {
+    cursor: pointer;
+
+}
+
+#end-btn {
+    height: 5vh;
+}
+
+#end-btn:hover {
+    cursor: pointer;
+}
+
+#timer-type-title {
+    width: 50vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#task-list {
+    border: 1px solid black;
+    position: fixed;
+    top: 2vh;
+    left: 2vh;
+    height: 40vh;
+    width: 30vw;
+    background-color: blue;
+}
+
+#add-task-btn {
+    position: absolute;
+    bottom: 1vh;
+    right: 1vh;
+}
+
+#close-tasks-btn {
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    height: 2vh;
+}
+
+#close-tasks-btn:hover {
     cursor: pointer;
 }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="main-element">
+        <div id="task-list" style="display: none;">
+            <button id="add-task-btn">+</button>
+            <img src="close-svgrepo-com.svg" id="close-tasks-btn">
+        </div>
+        <div id="pomodoro-timer">
+            <div id="background-effect" style="position: absolute;"></div>
+            <div id="timer-type-title">Pomodoro</div>
+            <div>
+                <div id="timer"></div>
+                <div id="btn-holder">
+                    <button id="pomodoro-btn">Pomodoro</button>
+                    <button id="short-break-btn">Short Break</button>
+                    <button id="long-break-btn">Long Break</button>
+                </div>
+            </div>
+            <div id="ctrl-btn-div">
+                <button id="start-btn">Start</button>
+                <img src="pause-button-svgrepo-com.svg" style="display: none;" id="pause-btn">
+                <img src="play-button-svgrepo-com.svg" style="display: none;" id="play-btn">
+                <img src="stop-button-svgrepo-com.svg" style="display: none;" id="end-btn">
+            </div>
+        </div>
+        <img src="settings2-svgrepo-com.svg" id="settings-btn">
+        <img src="task-svgrepo-com.svg" id="task-btn">
+    </main>
+    <dialog id="settings">
+            <div id="settings-holder">
+                <h2>Settings</h2>
+                <label for="pomodoro-length-setting">Pomodoro Length:</label>
+                <input type="number" id="pomodoro-length-setting">
+                <label for="short-break-length-setting">Short Break:</label>
+                <input type="number" id="short-break-length-setting">
+                <label for="long-break-length-setting">Long Break:</label>
+                <input type="number" id="long-break-length-setting">
+                <label for="pomodoro-repeat-select">Pomodoro Repeat Count:</label>
+                <p class="settings-info">How many Pomodoro's and short breaks before taking a long break?</p>
+                <input type="number" id="pomodoro-repeat-select">
+                <label for="theme-select">Theme:</label>
+                <select id="theme-select">
+                    <option id="default-theme">Default</option>
+                </select>
+                <button id="save-settings-btn">Save</button>
+                <audio src="alarm-clock-90867.mp3" style="display: none;" id="alarm"></audio>
+            </div> 
+            <img src="close-svgrepo-com.svg" id="close-settings-btn">
+        </dialog>
+    <script src="script.js" defer>
+
+    </script>
+</body>
+</html>
