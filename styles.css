@@ -1,0 +1,143 @@
+:root {
+    --border-radius: 10px;
+    --primary: white;
+    --font-color: black;
+    --border: 1vh solid #D3D3D3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+#main-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: gold;
+
+}
+
+#settings {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 60vw;
+    border-radius: var(--border-radius);
+    background-color: var(--primary);
+    color: var(--font-color);
+    border: none;
+    border-bottom: var(--border);
+}
+
+#settings-holder {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+}
+
+#close-settings-btn {
+    height: 5vh;
+    width: 5vw;
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+}
+
+#close-settings-btn:hover {
+    cursor: pointer;
+}
+
+#settings-holder input {
+    width: 20%;
+}
+
+#settings-holder select{
+    width: 20%;
+}
+
+#settings-btn {
+    z-index: 99;
+    position: fixed;
+    top: 2vh;
+    right: 2vh;
+    height: 5vh;
+    width: 5vw;
+}
+
+#settings-btn:hover {
+    cursor: pointer;
+}
+
+#save-settings-btn {
+    width: 20%;
+}
+
+#task-btn {
+    z-index: 99;
+    position: fixed;
+    top: 2vh;
+    left: 2vh;
+    height: 5vh;
+    width: 5vh;
+}
+
+#task-btn:hover {
+    cursor: pointer;
+}
+
+#task-list {
+    display: hidden;
+}
+
+#timer {
+    border: 1px solid black;
+    font-size: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+#btn-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    border: 1px solid black;
+    width: 50vw;
+    height: 7vh;
+}
+
+#btn-holder button {
+    height: 5vh;
+    width: 12vw;
+    border-radius: var(--border-radius);
+}
+
+#ctrl-btn-div {
+    border: 1px solid black;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-btn {
+    height: 3vh;
+    width: 10vw;
+    border-radius: var(--border-radius);
+}
+
+.pause-btn {
+    height: 65%;
+}
+
+.pause-btn:hover {
+    cursor: pointer;
+}
